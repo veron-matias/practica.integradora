@@ -1,0 +1,37 @@
+<div class="authContainer">
+
+  <form class="authCard" action="/api/users" method="post">
+    <div class="authTitle">SIGN UP</div>
+
+    <label for="first_name">First Name:</label>
+    <input
+      class="input"
+      type="text"
+      id="first_name"
+      name="first_name"
+      required
+    />
+    <br />
+    <label for="last_name">Last Name:</label>
+    <input class="input" type="text" id="last_name" name="last_name" required />
+    <br />
+    <label for="email">Email:</label>
+    <input class="input" type="email" id="email" name="email" required />
+    <br />
+    <label for="password">Password:</label>
+    <input
+      class="input"
+      type="password"
+      id="password"
+      name="password"
+      required
+    />
+    <br />
+    <label for="age">Age:</label>
+    <input class="input" type="number" id="age" name="age" required />
+    <br />
+    <button class="button" type="submit">SIGN UP</button>
+    <div class="authRedirect">Already have an account?
+      <a href="/auth/login">Log in</a></div>
+  </form>
+</div>

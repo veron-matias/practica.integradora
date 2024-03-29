@@ -1,0 +1,23 @@
+{{> appbar}}
+<div style="font-family: Roboto">
+  <div>
+
+    <h1 id="productsTitle"> Mis products</h1>
+        <h1 > {{products.page}}</h1>
+
+    <div id="productCardsContainer">
+    </div>
+    <div id="pageButtonsContainer">
+      <a id="prevButton"></a>
+      <div id="pageCounter"></div>
+      <a id="nextButton"></a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  
+  let products = {{{jsonStringify products}}};
+</script>
+<script src="js/products.js"></script>

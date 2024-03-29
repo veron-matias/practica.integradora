@@ -1,0 +1,18 @@
+<div class="authContainer">
+  <form class="authCard" action="/api/sessions/login" method="POST">
+    <div class="authTitle">LOGIN</div>
+    <label for="email">Email:</label>
+    <input class="input" type="email" id="email" name="email" required />
+    <br />
+    <label for="password">Password:</label>
+    <input
+      class="input"
+      type="password"
+      id="password"
+      name="password"
+      required
+    />
+    <br />
+    <button class="button" type="submit">LOGIN</button>
+    <div class="authRedirect">Don't have an account? <a href="/auth/register">Sign up</a></div>
+  </form>
